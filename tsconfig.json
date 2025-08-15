@@ -1,20 +1,15 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true,
-        "sourceMap": true,
-        "composite": true,
-        "incremental": true,
-        "declaration": true,
-        "allowSyntheticDefaultImports": true,
-        "lib": ["ES2023"],
-        "module": "NodeNext",
-        "moduleResolution": "nodenext",
-        "target": "ES2022",
-        "types": ["node", "vitest/globals"],
-        "jsx": "react-jsx",
-    }
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "references": [
+    { "path": "./packages/cli" },
+    { "path": "./packages/core" }
+  ],
+  "files": []
 }
